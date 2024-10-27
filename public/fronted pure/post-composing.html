@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../main-style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="/submit_post" method="post">
+        <div class="post-composing-grid">
+          <div class="title-composing-area">
+            <div class="post-composing-title">
+              <label class="large-text" for="post-title">New post name:</label>
+              <input
+                class="large-text"
+                type="text"
+                id="post-title"
+                name="title"
+                placeholder="New post"
+                maxlength="25"
+                required
+              />
+            </div>
+            <hr />
+          </div>
+          <div class="post-composing-content">
+            <label class="large-text" for="post-content">New post text:</label>
+            <textarea
+              class="large-text"
+              id="post-content"
+              name="content"
+              maxlength="624"
+              rows="10"
+              cols="50"
+              placeholder="Post text goes here"
+              required
+            ></textarea>
+          </div>
+          <div class="form-confirm-button">
+            <button class="huge-text" type="submit">OK</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

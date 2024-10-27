@@ -1,0 +1,54 @@
+<%- include('./partials/header.ejs') %>
+<form action="/login" method="post">
+  <div class="authorisation-grid">
+    <div class="option-container-grid">
+      <div class="option-continer-title-box option-container-main-title">
+        <p class="large-text">
+          <a href="#" id="authorisation-main-option-selected">Login</a>/<a
+            href="/register"
+            class="transparent-text"
+            >Register</a
+          >
+        </p>
+      </div>
+      <div class="option-container-content-box">
+        <div
+          class="option-container-content authorisation-box-size authorisation-option-template"
+        >
+          <div class="option-container-title-box">
+            <p class="large-text">Login to account</p>
+          </div>
+
+          <div class="option-box">
+            <p class="large-text">User name</p>
+            <input
+              class="medium-text"
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter your username"
+              required
+            />
+          </div>
+          <div class="option-box">
+            <p class="large-text">Password</p>
+            <input
+              class="medium-text"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div
+            class="form-confirm-button option-box authorisation-confirm-button-box"
+          >
+            <button class="huge-text" type="submit">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<%- include('./partials/footer.ejs') %>

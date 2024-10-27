@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "postId": 1,
+      "username": "ProcrastinationPro",
+      "date": "01/22/2024",
+      "statistics": 7,
+      "content": "I was supposed to clean the house, but instead, I’ve organized my sock drawer. Priorities. 🧦 #Winning",
+      "title": "Super Productive"
+    },
+    {
+      "postId": 2,
+      "username": "SleepySloth",
+      "date": "08/30/2024",
+      "statistics": 15,
+      "content": "I did a full workout today: 5 seconds of planking while trying to reach the remote. Burned at least 3 calories. 💪😴",
+      "title": "My Workout"
+    },
+    {
+      "postId": 3,
+      "username": "DadJokeMaster",
+      "date": "04/14/2024",
+      "statistics": 15,
+      "content": "Why does the microwave have a ‘silent’ mode? Like, am I microwaving secret popcorn? 🍿🤫",
+      "title": "Microwave Struggles"
+    },
+    {
+      "postId": 4,
+      "username": "CoffeeAddict",
+      "date": "11/17/2024",
+      "statistics": 1,
+      "content": "Tried to make coffee without coffee this morning. Ended up with a cup of sad, hot water and a life crisis. ☕",
+      "title": "Morning Drama"
+    },
+    {
+      "postId": 6,
+      "username": "CatWhisperer",
+      "date": "12/05/2024",
+      "statistics": 3,
+      "content": "My cat just knocked my coffee off the table, stared at me like I ruined her day, and walked away. Typical. 🐾",
+      "title": "Cat Logic"
+    },
+    {
+      "postId": 7,
+      "username": "sasada",
+      "date": "10/27/2024",
+      "statistics": 2,
+      "content": "asdasdasd",
+      "title": "dasdasd"
+    },
+    {
+      "postId": 8,
+      "username": "lio",
+      "date": "10/27/2024",
+      "statistics": 1,
+      "content": "asdasdasd",
+      "title": "sadsad"
+    },
+    {
+      "postId": 9,
+      "username": "lio",
+      "date": "10/27/2024",
+      "statistics": 1,
+      "content": "dasd",
+      "title": "22222"
+    },
+    {
+      "postId": 10,
+      "username": "sasada",
+      "date": "10/27/2024",
+      "statistics": 1,
+      "content": "sdasd",
+      "title": "11111"
+    }
+  ]
+}

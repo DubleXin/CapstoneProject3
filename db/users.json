@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "username": "sasada",
+      "password": "$2b$10$cNmxnfVXynkicVXFDI9qaO6O.FM/yt30mkl0Tqk8AcQHgXWSF/9e6"
+    },
+    {
+      "username": "mykola",
+      "password": "$2b$10$RhQARYzkAywzjFObaUgqJuSIfbLEIhpFv3o22UvpHXa7ahy2MMfxe"
+    },
+    {
+      "username": "lio",
+      "password": "$2b$10$ayACLs2l1utmVpoKfcWZnOXV/vgxLrnC7oRT8sWaHJErMzhOIst4O"
+    },
+    {
+      "username": "user1",
+      "password": "$2b$10$6q75LvIkcwkYOyoWs9yBIuyIEXMkqsEu78CKcjLWncOBskXyDgqSi"
+    }
+  ]
+}

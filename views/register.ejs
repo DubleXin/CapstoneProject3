@@ -1,0 +1,63 @@
+<%- include('./partials/header.ejs') %>
+<form action="/register" method="post">
+  <div class="authorisation-grid">
+    <div class="option-container-grid">
+      <div class="option-continer-title-box option-container-main-title">
+        <p class="large-text">
+          <a href="/login" class="transparent-text">Login</a>/<a
+            href="#"
+            id="authorisation-main-option-selected"
+            >Register</a
+          >
+        </p>
+      </div>
+      <div class="option-container-content-box">
+        <div
+          class="option-container-content authorisation-box-size authorisation-option-template"
+        >
+          <div class="option-container-title-box">
+            <p class="large-text">Login to account</p>
+          </div>
+
+          <div class="option-box">
+            <p class="large-text">User name</p>
+            <input
+              class="medium-text"
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter your username"
+              required
+            />
+          </div>
+          <div class="option-box double-input">
+            <p class="large-text">Password</p>
+            <input
+              class="medium-text"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+            <p class="large-text">Password</p>
+            <input
+              class="medium-text"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div
+            class="form-confirm-button option-box authorisation-confirm-button-box"
+          >
+            <button class="huge-text" type="submit">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<%- include('./partials/footer.ejs') %>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../main-style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="/register" method="post">
+        <div class="authorisation-grid">
+          <div class="option-container-grid">
+            <div class="option-continer-title-box option-container-main-title">
+              <p class="large-text">
+                <a href="/login" class="transparent-text">Login</a>/<a
+                  href="#"
+                  id="authorisation-main-option-selected"
+                  >Register</a
+                >
+              </p>
+            </div>
+            <div class="option-container-content-box">
+              <div
+                class="option-container-content authorisation-box-size authorisation-option-template"
+              >
+                <div class="option-container-title-box">
+                  <p class="large-text">Login to account</p>
+                </div>
+
+                <div class="option-box">
+                  <p class="large-text">User name</p>
+                  <input
+                    class="medium-text"
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your username"
+                    required
+                  />
+                </div>
+                <div class="option-box double-input">
+                  <p class="large-text">Password</p>
+                  <input
+                    class="medium-text"
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                  <p class="large-text">Password</p>
+                  <input
+                    class="medium-text"
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+                <div
+                  class="form-confirm-button option-box authorisation-confirm-button-box"
+                >
+                  <button class="huge-text" type="submit">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
+<%- include('./partials/footer.ejs') %>

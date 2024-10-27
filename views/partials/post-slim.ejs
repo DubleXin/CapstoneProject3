@@ -1,0 +1,46 @@
+<% let postData = `{"postId": -1, "username": "@not found@", "date": "@not
+found@", "statistics": -1, "content": "@not found@", "title": "@not found@"}`;
+if (locals.data) postData = data%>
+
+<div class="post-banner">
+  <p class="hidden-from-layout"><%-postData.postId%></p>
+  <div class="post-banner-date recent-post-list-element">
+    <p class="minor-text transparent-text"><%-postData.date%></p>
+  </div>
+  <div class="post-banner-title recent-post-list-element">
+    <p class="medium-text"><%-postData.title%></p>
+  </div>
+  <div class="post-banner-social recent-post-list-element">
+    <svg
+      class="full-heart-bunner"
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-heart-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+      />
+    </svg>
+    <p class="medium-text no-select"><%-postData.statistics%></p>
+  </div>
+  <div class="post-banner-jump-icon recent-post-list-element">
+    <svg
+      class="bunner-button"
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-arrow-right-circle"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+      />
+    </svg>
+  </div>
+</div>

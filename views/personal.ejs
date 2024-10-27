@@ -1,0 +1,78 @@
+<%- include('./partials/header.ejs') %>
+<div class="personal-grid">
+  <div class="option-container-grid personal-data-box">
+    <div class="option-continer-title-box option-container-main-title">
+      <p class="large-text">PERSONAL</p>
+    </div>
+    <div class="option-container-content-box">
+      <div
+        class="option-container-content personal-data-box-size personal-option-template"
+      >
+        <div class="option-container-title-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+            />
+          </svg>
+          <p class="large-text">username</p>
+        </div>
+        <div class="option-box">
+          <p class="large-text">Dark Theme</p>
+          <button id="change-theme" class="change-theme-button">
+            <svg
+              class="switch-on"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-toggle-on"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"
+              />
+            </svg>
+            <svg
+              class="switch-off hidden-from-layout"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-toggle-off"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="option-box">
+          <p class="large-text">Log Out</p>
+          <button id="log-out-button" class="log-out-button">
+            <p class="log-out-button-text medium-text">Log Out</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="recent-posts-grid">
+    <div class="recent-posts-title-container personal-title">
+      <p class="large-text">MY RECENT POSTS</p>
+    </div>
+    <div class="recent-post-list-container">
+      <% if(locals.data) { data.forEach((postData) => {%>
+      <%-include('./partials/post-slim.ejs', {data: postData})%> <%}); } %>
+    </div>
+  </div>
+</div>
+<%- include('./partials/footer.ejs') %>
